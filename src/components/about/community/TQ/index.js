@@ -3,7 +3,7 @@ import './styles.tq.css';
 
 const tqData = {
     title: ["Our Commitment", "To Quality"],
-    sub: "At Smallcap AI Service LLC, we are dedicated to delivering state-of-the-art IT solutions that redefine industry standards. We strive to be the benchmark for innovation, reliability, and service in the IT sector.",
+    sub: "At Brian Aleksander Service LLC, we are dedicated to delivering state-of-the-art IT solutions that redefine industry standards. We strive to be the benchmark for innovation, reliability, and service in the IT sector.",
     content: [
         {
             title: "Quality Standards",
@@ -14,7 +14,7 @@ const tqData = {
                 },
                 { 
                     subTitle: "Certifications: ", 
-                    subData: "Smallcap AI Service LLC holds globally recognized certifications in IT compliance, cybersecurity, and service management, including ISO and SOC standards." 
+                    subData: "Brian Aleksander Service LLC holds globally recognized certifications in IT compliance, cybersecurity, and service management, including ISO and SOC standards." 
                 }
             ]
         },
@@ -32,7 +32,7 @@ const tqData = {
         },
         { 
             title: "Sustainability and Ethics", 
-            data: "Smallcap AI Service LLC prioritizes green computing practices and ethical technology solutions to minimize environmental impact while maximizing societal benefits." 
+            data: "Brian Aleksander Service LLC prioritizes green computing practices and ethical technology solutions to minimize environmental impact while maximizing societal benefits." 
         },
     ]
 };

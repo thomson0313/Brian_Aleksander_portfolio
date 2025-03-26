@@ -40,7 +40,7 @@ function Header() {
                 <Link to='/'>
                     <div className='header-logo'>
                         <img src={Logo} alt='logo' />
-                        <div className='header-logo-web'>Smallcap AI</div>
+                        <div className='header-logo-web'>Brian.A</div>
                         {/* <div className='header-logo-mobile'>ESC</div> */}
                     </div>
                 </Link>
@@ -62,7 +62,7 @@ function Header() {
                     <Link to='/contact' className={`nav ${currentPath === '/contact' ? 'selected' : ''}`} onClick={toggleNav}>Contact Us</Link>
                     <div className='only-mobile burger-logo'>
                         {/* <img src={Logo_mobile} alt='logo' /> */}
-                        <div>2025 © Smallcap AI Service Limited liability company</div>
+                        <div>2025 © Brian Aleksander Service Limited liability company</div>
                     </div>
                 </div>
             </div>

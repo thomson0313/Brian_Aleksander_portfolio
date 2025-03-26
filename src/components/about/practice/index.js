@@ -8,7 +8,7 @@ import Icon_3 from '../../../assets/img/practice-3.png'
 const data = [
     {
         title: "Innovative Solutions",
-        content: "Smallcap AI Service LLC harnesses the power of cutting-edge software technologies to streamline operations, improve efficiency, and create sustainable digital solutions that empower businesses.",
+        content: "Brian Aleksander Service LLC harnesses the power of cutting-edge software technologies to streamline operations, improve efficiency, and create sustainable digital solutions that empower businesses.",
         icon: Icon_1
     },
     {
@@ -18,7 +18,7 @@ const data = [
     },
     {
         title: "Community Engagement",
-        content: "Smallcap AI Service LLC is committed to fostering digital literacy, supporting educational initiatives, and collaborating with tech communities to drive global progress through innovation.",
+        content: "Brian Aleksander Service LLC is committed to fostering digital literacy, supporting educational initiatives, and collaborating with tech communities to drive global progress through innovation.",
         icon: Icon_3
     },
 ];

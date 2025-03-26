@@ -6,7 +6,7 @@ import ContactForm from './ContactForm';
 
 import Map from '../../assets/img/map.png'
 import Location_icon from '../../assets/img/location-icon-d.png'
-// import Phone_icon from '../../assets/img/phone-icon-d.png'
+import Phone_icon from '../../assets/img/phone-icon-d.png'
 import Mail_icon from '../../assets/img/mail-icon-d.png'
 
 const routerData = [
@@ -14,11 +14,11 @@ const routerData = [
 ]
 
 const contactData = {
-	title: 'Smallcap AI Service Limited liability company',
+	title: 'Brian Aleksander Service Limited liability company',
 	data: [
-		{ icon: Location_icon, payload: '71-75 Shelton Street, London, WC2H 9JQ, England United Kingdom' },
-		// { icon: Phone_icon, payload: '+1 (316) 240-3351' },
-		{ icon: Mail_icon, payload: 'montek@smallcapai.in' }
+		{ icon: Location_icon, payload: '33 Washington Square W, New York United States of America' },
+		{ icon: Phone_icon, payload: '+1 (316) 240-3351' },
+		{ icon: Mail_icon, payload: 'brianaleksander23@gmail.com' }
 	]
 }
 

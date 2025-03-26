@@ -11,7 +11,7 @@ const ttzData = {
     cards: [
         { 
             topic: 'WEBSITE BUILDING', 
-            content: 'Smallcap AI Service LLC specializes in crafting responsive, user-friendly websites tailored to enhance your digital presence. From e-commerce platforms to portfolio sites, we focus on design, functionality, and scalability.', 
+            content: 'Brian Aleksander Service LLC specializes in crafting responsive, user-friendly websites tailored to enhance your digital presence. From e-commerce platforms to portfolio sites, we focus on design, functionality, and scalability.', 
             img: Img_1 
         },
         { 
@@ -21,7 +21,7 @@ const ttzData = {
         },
         { 
             topic: 'MOBILE APP DEVELOPMENT', 
-            content: 'Smallcap AI Service LLC creates cutting-edge mobile applications for iOS and Android platforms. Our apps are designed to offer seamless user experiences, integrate advanced features, and meet your business objectives.', 
+            content: 'Brian Aleksander Service LLC creates cutting-edge mobile applications for iOS and Android platforms. Our apps are designed to offer seamless user experiences, integrate advanced features, and meet your business objectives.', 
             img: Img_3 
         }
     ]

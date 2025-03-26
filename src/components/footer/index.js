@@ -7,7 +7,7 @@ import './styles.footer.css';
 // import Instagram_icon from '../../assets/img/insta-icon.png'
 // import Youtube_icon from '../../assets/img/youtube-icon.png'
 import Location_icon from '../../assets/img/location-icon.png'
-// import Phone_icon from '../../assets/img/phone-icon.png'
+import Phone_icon from '../../assets/img/phone-icon.png'
 import Mail_icon from '../../assets/img/mail-icon.png'
 // import Visa_icon from '../../assets/img/visa-icon.png'
 // import Bkash_icon from '../../assets/img/bkash-icon.png'
@@ -45,9 +45,9 @@ const data = [
 	{
 		category: { title: "Contact Us", link: '/contact' },
 		sub: [
-			{ title: "71-75 Shelton Street, London, WC2H 9JQ, England United Kingdom", link: "/", icon: Location_icon },
-			// { title: "+1 (316) 240-3351", link: "/", icon: Phone_icon },
-			{ title: "montek@smallcapai.in", link: "/", icon: Mail_icon }
+			{ title: "33 Washington Square W, New York United States of America", link: "/", icon: Location_icon },
+			{ title: "+1 (316) 240-3351", link: "/", icon: Phone_icon },
+			{ title: "brianaleksander23@gmail.com", link: "/", icon: Mail_icon }
 		]
 	}
 ];
@@ -59,9 +59,9 @@ function Footer() {
 				<div className='footer-social'>
 					<div>
 						{/* <img src={ESC_logo} alt='logo' /> */}
-						<div className='footer-logo-web'>Smallcap AI Service LLC</div>
+						<div className='footer-logo-web'>Brian Aleksander Service LLC</div>
 					</div>
-					<div className='footer-social-content'>Powering the Future with Smallcap AI Service Limited liability company</div>
+					<div className='footer-social-content'>Powering the Future with Brian Aleksander Service Limited liability company</div>
 					<div className='footer-socials'>
 						{/* <img src={Facebook_icon} alt='social' />
 						<img src={Instagram_icon} alt='social' />

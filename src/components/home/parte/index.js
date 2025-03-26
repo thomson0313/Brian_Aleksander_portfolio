@@ -11,7 +11,7 @@ function Parte() {
             </div>
             <div className='intro-content' data-aos='fade-down'>
                 <div className='intro-sup'>
-                    Why choose Smallcap AI Service LLC ?
+                    Why choose Brian Aleksander Service LLC ?
                 </div>
                 <div className='intro-description'>
                     <div className='intro-description-list'>
@@ -36,7 +36,7 @@ function Parte() {
                             <div>Long-Term Cost Efficiency: Although premium software often involves higher initial investments, our solutions save money over time through reduced downtime, automation, and extended lifecycle support.</div>
                         </div>
                     </div>
-                    <div className='intro-description-content'>At Smallcap AI Service LLC, we specialize in providing software solutions that emphasize high performance, safety, scalability, and cost efficiency. Perfect for industries such as finance, healthcare, retail, and renewable energy systems, we’re your partner in achieving sustainable growth through innovative technology.</div>
+                    <div className='intro-description-content'>At Brian Aleksander Service LLC, we specialize in providing software solutions that emphasize high performance, safety, scalability, and cost efficiency. Perfect for industries such as finance, healthcare, retail, and renewable energy systems, we’re your partner in achieving sustainable growth through innovative technology.</div>
                 </div>
             </div>
         </div>

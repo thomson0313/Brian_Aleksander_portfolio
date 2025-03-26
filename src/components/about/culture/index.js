@@ -9,7 +9,7 @@ const cultureData = [
     },
     {
         title: "Core Vision",
-        content: "Smallcap AI Service LLC envisions a future where we lead the software industry through groundbreaking technologies that drive digital transformation. Over the next decade, we aim to enhance global connectivity, security, and efficiency through innovative software solutions."
+        content: "Brian Aleksander Service LLC envisions a future where we lead the software industry through groundbreaking technologies that drive digital transformation. Over the next decade, we aim to enhance global connectivity, security, and efficiency through innovative software solutions."
     },
     {
         title: "Corporate Spirit",
