@@ -1,0 +1,75 @@
+.achieve {
+    padding-top: 40px;
+}
+
+.achieve-title {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.achieve-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 70px 20px;
+}
+
+.achieve-card-body {
+    background-color: #d3d3d3;
+    width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.cert-image {
+    background-color: #eaf3fa;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    .achieve-title {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .cert-image {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .achieve-title {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .achieve-card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        padding: 50px;
+    }
+    .achieve-card-body {
+        padding: 10px;
+        width: 100%;
+    }
+}

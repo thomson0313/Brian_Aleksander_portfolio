@@ -1,0 +1,80 @@
+.part-a {
+    background-image: url('../../../assets/img/banner-1.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background covers the entire area */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+}
+
+.part-a-l {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+    width: 50%;
+}
+
+.part-a-des {
+    font-size: 20px; /* Set a base font size */
+    font-weight: 600;
+}
+
+.part-a-r {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    align-items: center;
+    width: 40%;
+
+    > img {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .part-a {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .part-a-l {
+        width: 100%; /* Full width for left section */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text */
+    }
+
+    .part-a-des {
+        font-size: 16px; /* Adjust description font size */
+    }
+
+    .part-a-r {
+        width: 100%; /* Full width for right section */
+        margin-top: 20px; /* Space between text and images */
+        flex-direction: row; /* Stack images vertically */
+    }
+
+    .part-a-r > img {
+        width: 40%; /* Adjust image size */
+        margin: 10px 0; /* Add margin between images */
+    }
+}
+
+@media (min-width: 1200px) {
+    .part-a {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .part-a {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

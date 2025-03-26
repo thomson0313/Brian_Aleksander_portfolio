@@ -1,0 +1,21 @@
+/* styles.404.css */
+
+.not-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 37vh; /* Full viewport height */
+    font-size: 2rem; /* Font size */
+    color: #000085; /* Red color for the text */
+    background-color: #f0f0f0; /* Light gray background */
+    text-align: center;
+    font-family: 'Arial', sans-serif; /* Font family */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+@media (max-width: 600px) {
+    .not-found {
+        font-size: 1.5rem; /* Smaller font size on mobile */
+    }
+}

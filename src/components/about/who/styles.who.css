@@ -1,0 +1,22 @@
+.who {
+    padding: 50px 15% 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.who-title {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.who-content {
+    font-size: 16px;
+    color: #89898a;
+}
+
+@media (max-width: 1200px) {
+    .who {
+        padding: 30px 5% 30px;
+    }
+}

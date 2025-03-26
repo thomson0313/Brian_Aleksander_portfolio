@@ -1,0 +1,106 @@
+.intro {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Center vertically */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f3f7fa; /* Light background for contrast */
+}
+
+.intro-img {
+    flex: 1; /* Allow image section to grow */
+    display: flex;
+    justify-content: center; /* Center the image */
+}
+
+.intro-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    width: 400px; /* Fixed width for larger screens */
+}
+
+.intro-content {
+    flex: 1; /* Allow content section to grow */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Spacing between elements */
+}
+
+.intro-sup {
+    font-size: 38px; /* Adjusted font size */
+    font-weight: bold;
+    color: #4b4648;
+}
+
+.intro-description {
+    font-size: 16px; /* Adjusted for better readability */
+    color: #656565;
+}
+
+.intro-description-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.intro-description-list-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-description-content {
+    padding: 20px 0;
+}
+
+.intro-sub {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-button {
+    font-size: 20px;
+    border-radius: 3px;
+    padding: 10px 20px;
+    background-color: #4b4648; /* Button background color */
+    color: white; /* Text color for button */
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column; /* Stack content and image on smaller screens */
+        align-items: center; /* Center all items */
+        text-align: center; /* Center text */
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+    .intro-image {
+        width: 80%; /* Responsive width for smaller screens */
+    }
+
+    .intro-content {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .intro-sub {
+        justify-content: center;
+    }
+    .intro-description {
+        text-align: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .intro {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .intro {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

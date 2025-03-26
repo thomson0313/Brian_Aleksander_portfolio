@@ -1,0 +1,207 @@
+.hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #e9ecfa;
+    /* background-image: url('../../../assets/img/esc-hero.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 400px; */
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Space between content and image */
+    align-items: center; /* Center vertically */
+}
+
+.hero-content {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero-title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.hero-sub-title {
+    color: #4b4648;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hero-features {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+}
+
+.font-mid {
+    font-size: 15px!important;
+    font-weight: 300!important;
+}
+
+.hero-feature-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+    > img {
+        width: 13px;
+        height: 13px;
+        margin-top: 5px;
+    }
+}
+
+.hero-description {
+    font-size: 14px; /* Adjusted for better readability */
+    max-width: 75%;
+}
+
+.sub {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.button-r {
+    font-size: 20px;
+    border-radius: 3px;
+    border: white 1px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.button-c {
+    font-size: 18px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 25px;
+    background-color: #4b4648;
+    color: white;
+    cursor: pointer;
+}
+
+.hero-slide {
+    display: flex; /* Center the image in the slide */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    position: relative;
+}
+
+.hero-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    width: 70%; /* Fixed width for larger screens */
+    z-index: 1;
+}
+
+.hero-hidden-image {
+    display: none;
+    padding-bottom: 15px;
+}
+
+.hero-slide::after {
+    content: "";
+    width: 70%;
+    height: 70%;
+    z-index: 0;
+    position: absolute;
+    filter: blur(100px);
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4b4648;
+}
+
+.hero-hidden-image::after {
+    content: "";
+    width: 50%;
+    height: 50%;
+    z-index: -10;
+    position: absolute;
+    filter: blur(100px);
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4b4648;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column; /* Stack content and image on smaller screens */
+        align-items: center; /* Center all items */
+        /* text-align: center; Center text */
+        padding-top: 20px;
+        padding-bottom: 50px;
+        background-size: 200px 200px;
+        background-position: 50% 30%;
+        height: 100vh!important;
+    }
+
+    .hero-title {
+        font-size: 25px;
+    }
+
+    .hero-content {
+        width: 100%; /* Full width on smaller screens */
+        gap: 10px;
+
+        > .hero-description {
+            padding-top: 15px;
+            max-width: 100%;
+        }
+    }
+
+    .hero-slide {
+        display: none;
+    }
+
+    .sub {
+        justify-content: center;
+        gap: 0;
+    }
+
+    .hero-features {
+        font-size: 14px;
+    }
+    .hero-feature-item img {
+        width: 10px;
+        height: 10px;
+        margin-top: -2px;
+    }
+    .hero-hidden-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > img {
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .hero {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .hero-content {
+        width: 90%;
+    }
+}

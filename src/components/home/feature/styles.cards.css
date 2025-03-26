@@ -1,0 +1,91 @@
+.features-container {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    grid-gap: 20px; /* Space between grid items */
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.card {
+    background-color: black; /* Blue background */
+    color: white; /* White text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.2s; /* Smooth scaling effect */
+    display: flex; /* Flexbox for icon and text alignment */
+    flex-direction: column; /* Vertical layout */
+    align-items: flex-start; /* Align items to the start */
+    cursor: pointer;
+}
+
+.primary-color {
+    background-color: #4b4648!important;
+}
+
+.card:hover {
+    transform: scale(1.05)!important; /* Scale up on hover */
+}
+
+.card-sup {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.card-icon {
+    font-size: 40px; /* Icon size */
+    margin-bottom: 10px; /* Space below icon */
+}
+
+.card-title {
+    font-size: 20px; /* Title size */
+    margin: 10px 0; /* Space above and below title */
+}
+
+.card-content {
+    font-size: 14px; /* Content size */
+    padding-left: 40px; /* Space on the left */
+}
+
+.features-container div:nth-child(5) {
+    grid-column: 2 span;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features-container {
+        grid-template-columns: 1fr; /* Single column layout on small screens */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+    
+    .card {
+        padding: 15px; /* Adjust padding inside cards */
+    }
+    
+    .card-title {
+        font-size: 18px; /* Slightly smaller title size */
+    }
+
+    .card-content {
+        font-size: 12px; /* Smaller content size */
+        padding-left: 20px; /* Reduce left padding */
+    }
+    .features-container div:nth-child(5) {
+        grid-column: initial;
+    }
+}
+
+@media (min-width: 1200px) {
+    .features-container {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .features-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

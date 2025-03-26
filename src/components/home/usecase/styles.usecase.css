@@ -1,0 +1,172 @@
+.usecase {
+    padding: 40px 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.usecase-title {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.usecase-compare {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 10%;
+    gap: 5%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.usecase-bad {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+}
+
+.usecase-good {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    justify-content: center;
+
+    > .usecase-compare-name {
+        margin-left: 30%;
+    }
+}
+
+.usecase-compare-name {
+    font-size: 28px;
+    color: #4b4648;
+    font-weight: 700;
+}
+
+.usecase-product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.usecase-product-img img {
+    width: 80%;
+    height: auto;
+}
+.usecase-result-icon img {
+    width: 80%;
+    height: auto;
+}
+
+.usecase-txt {
+    width: 60%;
+    color: #4b4648;
+    font-weight: 700;
+    font-size: 16px;
+    margin: auto;
+    display: flex;
+    text-align: center;
+}
+
+.compare-table {
+    margin-bottom: 40px;
+    overflow-x: auto;
+}
+
+/* styles for compare table from here*/
+table {
+    width: 97%;
+    border-collapse: collapse; /* Ensures borders are collapsed into a single border */
+    font-weight: 600;
+    font-size: 14px;
+    min-width: 1000px;
+    margin: auto;
+}
+thead {
+    color: white;
+    background-color: #4b4648;
+}
+.text-align {
+    text-align: center!important;
+}
+.table-bg {
+    background-color: #ECF3FA!important;
+    width: 250px;
+}
+th {
+    text-align: center!important;
+}
+th, td {
+    border: 0.5px solid #D6D6D6; /* Black border for all cells */
+    padding: 15px 16px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+    height: 30px;
+}
+td img {
+    width: 21px;
+    height: 21px;
+}
+
+/*styles for custom scroll bar from here*/
+
+/* Scrollbar Track */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Background of the scrollbar track */
+}
+
+/* Scrollbar Handle */
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar handle */
+    border-radius: 5px!important; /* Rounded corners */
+}
+
+/* Scrollbar Handle on Hover */
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color on hover */
+}
+
+/* For Firefox */
+.custom-scrollbar {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Handle color and track color */
+}
+
+
+@media (max-width: 1200px) {
+    .usecase {
+        padding: 30px 5%;
+    }
+    .usecase-txt {
+        width: 90%;
+    }
+    .usecase-compare-name {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .usecase-compare-name {
+        font-size: 15px;
+        margin-left: 0;
+    }
+    th, td {
+        padding: 6px 10px;
+        height: 20px;
+    }
+    .usecase-compare {
+        padding: 0 5%;
+    }
+    .usecase-bad {
+        gap: 20px;
+    }
+    .usecase-good {
+        gap: 20px;
+    }
+    .compare-table {
+        margin-bottom: 0;
+    }
+}

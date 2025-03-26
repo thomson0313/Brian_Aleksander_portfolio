@@ -1,0 +1,139 @@
+.part-b {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.part-b-product {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 48%;
+    flex: 1 1 300px; /* Allow items to grow and shrink */
+}
+
+.part-b-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.part-b-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.part-b-sub {
+    font-size: 15px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 10px;
+}
+
+.feature-item {
+    font-size: 12px;
+    color: #656565;
+}
+
+.feature-item::before {
+    content: '•'; /* Bullet point */
+    color: #007BFF; /* Blue color for bullet */
+    display: inline-block; 
+    width: 1em; /* Space for bullet */
+    margin-left: -1em; /* Align bullet with text */
+}
+
+.part-b-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #656565;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 1px grey solid;
+    width: max-content;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.part-b-button:hover {
+    border: 1px #007BFF solid;
+    color: #007BFF;
+}
+
+.part-b-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    width: 45%;
+
+    > img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .part-b {
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+
+    .part-b-title {
+        font-size: 18px; /* Adjust title size */
+    }
+
+    .part-b-sub {
+        font-size: 14px; /* Adjust subtitle size */
+    }
+
+    .feature-item {
+        font-size: 14px; /* Adjust feature item size */
+    }
+
+    .part-b-button {
+        font-size: 12px; /* Adjust button font size */
+        padding: 5px; /* Adjust button padding */
+    }
+}
+
+@media (min-width: 1200px) {
+    .part-b {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .part-b {
+        flex-direction: column; /* Stack items vertically */
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .part-b-product {
+        width: 100%; /* Full width on smaller screens */
+        justify-content: center;
+        gap: 5%;
+        align-items: center; /* Center align items */
+        padding-bottom: 25px;
+    }
+
+    .part-b-img {
+        width: 40%; /* Full width for images */
+        margin-top: 10px; /* Space between text and image */
+    }
+}

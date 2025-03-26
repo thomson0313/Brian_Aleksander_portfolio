@@ -1,0 +1,128 @@
+.part-c {
+    background-image: url('../../../assets/img/banner-2.png');
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensure the background covers the entire area */
+    padding-top: 40px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+}
+
+.part-c-l {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    width: 50%;
+}
+
+.part-c-title {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+/* .part-c-button {
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+} */
+
+.part-c-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 3px;
+    border: 1px white solid;
+    width: max-content;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.part-c-button-r,
+.part-c-button-w {
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.part-c-button-r {
+    background-color: #4b4648;
+    color: white;
+}
+
+.part-c-button-w {
+    border: white 1px solid;
+    color: white;
+}
+
+.part-c-r {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+
+    > img {
+        width: 60%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .part-c {
+        flex-direction: column; /* Stack items vertically */
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .part-c-l {
+        width: 100%; /* Full width for left section */
+        align-items: center; /* Center align items */
+        text-align: center; /* Center text */
+    }
+
+    .part-c-title {
+        font-size: 28px; /* Adjust title size */
+    }
+
+    .part-c-button {
+        width: 100%;
+        align-items: center;
+        gap: 15px; /* Adjust gap */
+    }
+
+    .part-c-button-r,
+    .part-c-button-w {
+        font-size: 18px; /* Adjust button font size */
+        width: 100%; /* Full width buttons */
+    }
+
+    .part-c-r {
+        width: 100%; /* Full width for right section */
+        margin-top: 20px; /* Space between text and image */
+
+        > img {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .part-c {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .part-c {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

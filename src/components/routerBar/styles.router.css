@@ -1,0 +1,40 @@
+.router-bar {
+    padding: 40px 15%;
+}
+
+.router-bar-container {
+    background-color: #ecf3fa;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding: 20px 40px;
+}
+
+.router-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #4b4648;
+    font-size: 13px;
+}
+
+a {
+    color: inherit;
+}
+
+@media (max-width: 1200px) {
+    .router-bar {
+        padding: 20px 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .router-bar {
+        padding: 10px 5%;
+    }
+
+    .router-bar-container {
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,15 @@
+.about-hero{
+    background-image: url('../../assets/img/about-hero.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-width: 100%;
+    min-height: 30vw;
+}
+
+.community-hero{
+    background-image: url('../../assets/img/community-hero.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-width: 100%;
+    min-height: 30vw;
+}

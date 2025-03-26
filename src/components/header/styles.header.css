@@ -1,0 +1,228 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    background-image: linear-gradient(to right, #4b4648, #a3a29c, #4b4648); /* Header background color */
+    color: white; /* Text color */
+    position: fixed; /* Fixed position for header */
+    width: 70%;
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: 1000!important; /* Ensure it stays on top */
+    height: 120px; /* Allow height to adjust based on content */
+}
+
+.header-logo-web {
+    font-family: 'Philosopher';
+    font-size: 50px;
+}
+
+.header-space {
+    height: 120px;
+    background-color: #4b4648;
+}
+
+.header-logo img {
+    max-width: 100%; /* Ensure logo is responsive */
+    height: auto; /* Maintain aspect ratio */
+    width: 12%;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    /* justify-content: center; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-logo-mobile {
+    display: none;
+}
+
+.header-nav {
+    display: flex;
+    gap: 10px; /* Space between navigation items */
+    /* width: 60%; */
+}
+
+.nav {
+    color: white; /* Link color */
+    font-size: 16px; /* Font size */
+    text-decoration: none; /* Remove underline */
+    position: relative;
+    padding: 5px 10px; /* Padding around links */
+    transition: color 0.3s, transform 0.3s; /* Transition effects */
+}
+
+.nav:hover {
+    color: white; /* Change color on hover */
+    font-weight: bolder; /* Bold text on hover */
+    transform: scale(1.01); /* Scale effect on hover */
+}
+
+.nav:focus, .nav:active {
+    outline: none; /* Remove outline on focus/active */
+}
+
+.nav::after {
+    content: '';
+    display: block;
+    height: 2px; /* Underline height */
+    background: transparent; /* Default background */
+    transition: background 0.3s; /* Transition for underline */
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px; /* Positioning of underline */
+}
+
+.nav:hover::after {
+    background: white; /* Underline color on hover */
+}
+
+.nav.selected::after {
+    background: white; /* Selected underline color */
+    font-weight: bolder; /* Bold text for selected */
+}
+
+.burger {
+    display: none; /* Hide burger button by default */
+    flex-direction: column; /* Stack lines */
+    cursor: pointer; /* Pointer cursor */
+}
+
+.line {
+    width: 30px; /* Width of burger lines */
+    height: 3px; /* Height of burger lines */
+    background-color: white; /* Color of burger lines */
+    margin: 4px 0; /* Space between lines */
+    transition: all 0.3s; /* Smooth transitions */
+}
+
+.line.active {
+    background-color: white; /* Change color when active */
+}
+
+.line.active:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px); /* Rotate first line */
+}
+
+.line.active:nth-child(2) {
+    opacity: 0; /* Hide second line */
+}
+
+.line.active:nth-child(3) {
+    transform: rotate(-45deg) translate(9px, -11px); /* Rotate third line */
+}
+
+/*for nav show/hide according to scroll up/down from here*/
+.header.hidden {
+    transform: translateY(-100%); /* Hide header */
+}
+
+.header.visible {
+    transform: translateY(0); /* Show header */
+}
+
+.only-mobile {
+    display: none;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .header {
+        padding-left: 5%;
+        padding-right: 5%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+        justify-content: center;
+        height: 70px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .header-space {
+        height: 90px;
+    }
+
+    .header-nav {
+        position: absolute;
+        margin-left: -5%;
+        top: 80px;
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 10px; /* Space between nav items */
+        width: 100%; /* Full width for nav */
+        padding: 10px 0; /* Padding for nav */
+    }
+
+    .nav {
+        font-size: 18px; /* Slightly smaller font size */
+        padding: 10px; /* Increased padding for easier clicking */
+        width: 100%; /* Full width for links */
+        text-align: center; /* Align text to the left */
+    }
+
+    .burger {
+        display: flex; /* Show burger button */
+        position: absolute; /* Position at top right */
+        right: 20px; /* Position from right */
+    }
+
+    .header-nav {
+        display: none; /* Hide nav by default */
+        flex-direction: column; /* Stack items vertically */
+        width: 100%; /* Full width */
+        background-color: #4b4648; /* Same background as header */
+        padding: 10px 0; /* Padding around nav */
+    }
+
+    .header-nav.visible {
+        display: flex; /* Show nav when visible */
+        z-index: 1;
+        height: 100vh;
+        width: 60vw;
+        align-items: flex-start;
+        position: fixed;
+        right: 0;
+        padding-top: 5vh;
+    }
+    .header-logo-mobile {
+        display: flex;
+    }
+    .header-logo-web {
+        display: none;
+    }
+    .header-logo img {
+        width: 15%;
+    }
+    .burger-logo {
+        position: fixed;
+        right: 20px;
+        bottom: -85vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+
+        > img {
+            width: 50px;
+        }
+    }
+    .only-mobile {
+        display: flex;
+    }
+}

@@ -1,0 +1,54 @@
+.wes {
+    padding: 50px 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.wes-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.wes-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+
+    > img {
+        width: 35%;
+        height: 35%;
+    }
+}
+
+.wes-txt{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.wes-txt-item {
+    font-size: 16px;
+    color: #89898a;
+}
+
+@media (max-width: 1200px) {
+    .wes {
+        padding: 30px 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wes-content {
+        flex-direction: column;
+
+        > img {
+            width: 80%;
+        }
+    }
+}
