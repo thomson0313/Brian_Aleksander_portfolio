@@ -2,40 +2,40 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './styles.hero.css';
 
-import ESC_model from '../../../assets/img/hero-banner-2.png';
+import Shopify_model from '../../../assets/img/shopify_banner.png';
 import ESC_model_2 from '../../../assets/img/hero-banner-3.png';
 import Tick_icon from '../../../assets/img/tick.png';
 import Carousel from '../../Carousel/Carousel';
 
 const heroData = [
     {
-        title: 'Empower Your Business with Blockchain Solutions',
-        subTitle: 'The Future of Secure and Transparent Transactions',
+        title: 'Revolutionize with Web and Mobile App Development',
+        subTitle: 'Smarter Applications for Smarter Businesses',
         features: [
-            'Decentralized and secure systems',
-            'Seamless integration with existing infrastructure',
-            'Smart contract automation',
-            'Cost-effective and scalable solutions',
+            'Custom web and mobile applications',
+            'Intuitive UI/UX design for better user experiences',
+            'Scalable and secure architecture',
+            'Cross-platform solutions for web and mobile',
+            'Real-time data integration and API development',
+            'Seamless integration with your existing systems',
         ],
-        content: 'Our blockchain expertise empowers businesses to embrace decentralized technologies, ensuring transparency, security, and efficiency in all transactions.',
-        btn: 'Discover Blockchain',
+        content: 'Transform your business with custom web and mobile applications designed to enhance functionality and streamline operations.',
+        btn: 'Explore Web & Mobile Solutions',
         img: ESC_model_2,
     },
     {
-        title: 'Revolutionize with AI Innovations',
-        subTitle: 'Smarter Technologies, Smarter Decisions',
+        title: 'Empower Your Business with Shopify Solutions',
+        subTitle: 'The Future of Seamless eCommerce Experiences',
         features: [
-            'Real-time data analysis and insights',
-            'Advanced machine learning models',
-            'Custom AI solutions tailored to your needs',
-            'Improved operational efficiency through automation',
-            'Seamless integration with existing systems',
-            'Scalable architectures for future growth'
+            'Customizable and scalable online stores',
+            'Seamless integration with payment gateways',
+            'Mobile-optimized and responsive designs',
+            'Advanced analytics and reporting tools',
         ],
-        content: 'Leverage AI to drive innovation and gain a competitive edge with our cutting-edge AI development services.',
-        btn: 'Explore AI Solutions',
-        img: ESC_model,
-    }
+        content: 'Our Shopify expertise enables businesses to create tailored, high-performance online stores that drive sales and improve customer engagement.',
+        btn: 'Discover Shopify Solutions',
+        img: Shopify_model,
+    },
 ];
 
 function Hero() {

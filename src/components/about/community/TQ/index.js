@@ -20,7 +20,7 @@ const tqData = {
         },
         { 
             title: "Innovation and Continuous Improvement", 
-            data: "Innovation drives our IT offerings. We consistently invest in emerging technologies like AI, cloud computing, and blockchain to keep our solutions ahead of the curve and aligned with customer needs." 
+            data: "Innovation drives our IT offerings. We consistently invest in emerging technologies like AI, cloud computing, to keep our solutions ahead of the curve and aligned with customer needs." 
         },
         { 
             title: "Background", 

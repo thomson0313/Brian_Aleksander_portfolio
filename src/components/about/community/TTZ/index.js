@@ -2,27 +2,27 @@ import React from "react";
 import './styles.ttz.css';
 
 import Img_1 from '../../../../assets/img/frontend.png'
-import Img_2 from '../../../../assets/img/blockchain.png'
+import Img_2 from '../../../../assets/img/shopify.jpg'
 import Img_3 from '../../../../assets/img/mobile.png'
 
 const ttzData = {
     title: ["WHAT WE DO", "Our Professional Services"],
-    sub: "Building a website, providing the blockchain. Our products are 100% turn-key & believable",
+    sub: "Building a website, Development the shopify. Our products are 100% turn-key & believable",
     cards: [
-        { 
-            topic: 'WEBSITE BUILDING', 
-            content: 'Brian Aleksander Service LLC specializes in crafting responsive, user-friendly websites tailored to enhance your digital presence. From e-commerce platforms to portfolio sites, we focus on design, functionality, and scalability.', 
-            img: Img_1 
+        {
+            topic: 'WEBSITE BUILDING',
+            content: 'Brian Aleksander Service LLC specializes in crafting responsive, user-friendly websites tailored to enhance your digital presence. From e-commerce platforms to portfolio sites, we focus on design, functionality, and scalability.',
+            img: Img_1
         },
-        { 
-            topic: 'BLOCKCHAIN SOLUTION', 
-            content: 'Our blockchain solutions offer secure and transparent systems for industries like finance, supply chain, and healthcare. We provide smart contract development, decentralized applications, and more to revolutionize your operations.', 
-            img: Img_2 
+        {
+            topic: 'SHOPIFY DEVELOPMENT',
+            content: 'Our Shopify solutions empower your eCommerce business with customized, scalable, and user-friendly online stores. From theme development to app integration, we help you create seamless shopping experiences that drive growth and conversions.',
+            img: Img_2
         },
-        { 
-            topic: 'MOBILE APP DEVELOPMENT', 
-            content: 'Brian Aleksander Service LLC creates cutting-edge mobile applications for iOS and Android platforms. Our apps are designed to offer seamless user experiences, integrate advanced features, and meet your business objectives.', 
-            img: Img_3 
+        {
+            topic: 'MOBILE APP DEVELOPMENT',
+            content: 'Brian Aleksander Service LLC creates cutting-edge mobile applications for iOS and Android platforms. Our apps are designed to offer seamless user experiences, integrate advanced features, and meet your business objectives.',
+            img: Img_3
         }
     ]
 }
